@@ -18,7 +18,7 @@ def generate_launch_description():
         package='scanmatcher',
         executable='scanmatcher_node',
         parameters=[mapping_param_dir],
-        remappings=[('/input_cloud','/points_raw')],# Autoware
+        remappings=[('/input_cloud','/velodyne_points')],# Autoware
         output='screen'
         )
 
